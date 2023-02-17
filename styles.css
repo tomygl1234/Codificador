@@ -1,0 +1,166 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  
+  font-size: 1.6rem; /* 1rem = 10px*/
+  background: #e5e5e5;
+}
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+/* Variables */
+:root {
+  --white: #fff;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+  --dark-blue100: #609ed4;
+  --dark-blue200: #356ea9;
+  --dark-blue300: #0a3871;
+  --dark-blue400: #072b61;
+  --dark-blue500: #052051;
+}
+/*  Globales  */
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  color: var(--gray-500);
+}
+p {
+  color: var(--gray-400);
+}
+/*   Header   */
+
+.logo-cont {
+  padding-top: 1.5rem;
+  position: relative;
+}
+.logo {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*  Botones */
+.boton {
+  text-align: center;
+  border-radius: 2.2rem;
+  padding: 2rem 8rem;
+  cursor: pointer;
+}
+.boton-1 {
+  background-color: var(--dark-blue500);
+  color: white;
+  width: 90%;
+}
+.boton-2 {
+  border: 1px solid var(--dark-blue300);
+  background-color: #d8dfe8;
+  width: 90%;
+}
+.boton-3 {
+  width: 100%;
+}
+
+/*  layout  */
+@media (min-width: 780px) {
+    body{
+        display: grid;
+         grid-template-columns: 1fr 8fr 3fr;
+    }
+}
+
+/* centro */
+main{
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 780px) {
+    main {
+        width: 90%;
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: 3fr 1fr;
+        padding-top: 8rem;
+      }
+}
+
+
+  /*  textarea  */
+  .input-css, .input-css::placeholder{
+    background-color: var(--white);
+    font-size: 2.3rem;
+  }
+  .input-css::placeholder{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
+  }
+  textarea,
+  textarea::placeholder {
+    background-color: #e5e5e5;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #0a3871;
+    border: none;
+    font-family: "Inter";
+    resize: vertical;
+    height: auto;
+  }
+
+.traductor-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.botones-cont {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .advertencia {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .alert {
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+/* sidebar*/
+
+.sidebar {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.muñeco{
+    display: none;
+}
+
+@media (min-width: 780px) {
+    .muñeco {
+        display: block;
+        width: 25rem;
+        height: 25rem;
+      }    
+}

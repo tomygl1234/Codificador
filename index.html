@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;500;700&family=Telex&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <!-- LOGO -->
+    <header>
+      <div class="logo-cont">
+        <img src="img/Logo.png" alt="Logo app Alura" class="logo" />
+      </div>
+    </header>
+
+
+    <!-- Contenido -->
+    <main>
+      <div class="traductor-cont">
+        <textarea
+          class="input-texto"
+          cols="50"
+          rows="12"
+          placeholder="Ingrese su texto aquí"
+          autofocus
+        ></textarea>
+        
+        <div class="contenedor">
+         
+            
+          <p class="advertencia">
+            <img
+            src="img/alert.png"
+            class="alert"
+            alt="signo de exclamación alerta"
+          />
+           Sólo letras minúsculas y sin acentos
+          </p>
+       
+          
+          <div class="botones-cont">
+            <button class="encriptar boton boton-1" onclick="btnEncriptar()">
+              Encriptar
+          </button>
+          <button class="desencriptar boton boton-2" onclick="btnDesencriptar()">
+              Desencriptar
+
+          </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="traductor-cont sidebar">
+      <img
+        src="img/Muñeco.png"
+        class="muñeco"
+        alt="imagen de un muñeco que señala que no se encontró un texto para ingresar"
+      />
+      <h2>Ningún mensaje fue encontrado</h2>
+      <textarea 
+      
+      placeholder="Ingresá el texto que desees encriptar o desencriptar"
+      cols="18" 
+      rows="4"
+      class="input-texto input-copiar input-css mensaje"></textarea>
+      <a href="#" class="boton-2 boton boton-3 copiar" onclick="copiar()">Copiar</a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  
+</html>
