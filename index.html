@@ -11,7 +11,6 @@
     />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
-    
     <title>Encriptador</title>
   </head>
   <body>
@@ -66,17 +65,18 @@
         class="muñeco"
         alt="imagen de un muñeco que señala que no se encontró un texto para ingresar"
       />
-      <h2>Ningún mensaje fue encontrado</h2>
+      <h2 id="missmsg">Ningún mensaje fue encontrado</h2>
       <textarea 
       
-      placeholder="Ingresá el texto que desees encriptar o desencriptar"
+      placeholder="Ingrese el texto que desee encriptar o desencriptar"
       cols="18" 
       rows="4"
-      class="input-texto input-copiar input-css mensaje"></textarea>
-      <a href="#" class="boton-2 boton boton-3 copiar" onclick="copiar()">Copiar</a>
+      id="input-texto"
+      class="mensaje input-texto input-copiar input-css transplaceholder"></textarea>
+      <button href="#" class="boton-2 boton boton-3 copiar" onclick="copiar()">Copiar</button>
     </div>
 
-    <script src="app.js"></script>
+    
   </body>
-  
+  <script src="app.js"></script>
 </html>

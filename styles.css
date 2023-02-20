@@ -10,7 +10,8 @@ html {
 body {
   
   font-size: 1.6rem; /* 1rem = 10px*/
-  background: #e5e5e5;
+  background: #d8dfe8;
+
 }
 img {
   margin: 0 auto;
@@ -70,9 +71,12 @@ p {
   border: 1px solid var(--dark-blue300);
   background-color: #d8dfe8;
   width: 90%;
+  color: var(--dark-blue500);
 }
 .boton-3 {
+  visibility: hidden;
   width: 100%;
+  background-color: transparent;
 }
 
 /*  layout  */
@@ -112,7 +116,7 @@ main{
   }
   textarea,
   textarea::placeholder {
-    background-color: #e5e5e5;
+    background-color: transparent;
     font-weight: 400;
     font-size: 3rem;
     color: #0a3871;
@@ -120,6 +124,10 @@ main{
     font-family: "Inter";
     resize: vertical;
     height: auto;
+  }
+  .transplaceholder::placeholder{
+    font-size: smaller;
+    color: #343A40;
   }
 
 .traductor-cont {
@@ -152,6 +160,10 @@ main{
   border: 1px solid white;
   border-radius: 1.5rem;
   text-align: center;
+  justify-content: center;
+}
+.sinJustify{
+  justify-content:unset !important;
 }
 .muñeco{
     display: none;
@@ -164,3 +176,11 @@ main{
         height: 25rem;
       }    
 }
+
+.missmsg{
+  display: none;
+}
+.missmsg2{
+  display: none;
+}
+
