@@ -74,8 +74,6 @@ function btnEncriptar() {
   }
   mensaje.style.backgroundImage = "none";
   inputTexto.value = "";
-  
-  
 }
 
 function encriptar(stringEncriptada) {

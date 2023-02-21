@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  
+  font-size: 1.6rem; /* 1rem = 10px*/
+  background: #d8dfe8;
+
+}
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+/* Variables */
+:root {
+  --white: #fff;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+  --dark-blue100: #609ed4;
+  --dark-blue200: #356ea9;
+  --dark-blue300: #0a3871;
+  --dark-blue400: #072b61;
+  --dark-blue500: #052051;
+}
+/*  Globales  */
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  color: var(--gray-500);
+}
+p {
+  color: var(--gray-400);
+}
+  
+
+
